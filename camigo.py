@@ -2,7 +2,7 @@ import sys
 import os
 from trainer import trainer
 
-options = "1. take someone's photo\n2. train system\n3. arm system\n4. exit"
+options = "1. take photo\n2. train system\n3. arm system\n4. exit"
 cascade = os.getcwd() + "/haarcascade_frontalface_default.xml"
 imageRoot= os.path.join(os.getcwd(), "images")
 
@@ -42,7 +42,7 @@ def setUpFace():
         os.makedirs(imageLocation)
     
     print "please stand in front of the camera for a moment, be natural and try different facial expressions"
-    from photography import photographer
+    from photographer import photographer
     photographer = photographer(imageLocation, cascade)
     photographer.shoot(50)
 
