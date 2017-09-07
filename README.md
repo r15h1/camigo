@@ -1,5 +1,6 @@
 # camigo
 Camigo is a python app that attempts to recognize people faces streamed via a camera (or webcam) using haar cascade.
+
 Pre-requisites: python 2.7, opencv, numpy
 
 Usage: python camigo.py
