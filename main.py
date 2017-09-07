@@ -2,26 +2,23 @@ import sys
 import os
 from trainer import trainer
 
-options = "1. set up face\n2. arm system\n3. train system\n4. exit"
+options = "1. take someone's photo\n2. train system\n3. arm system\n4. exit"
 cascade = os.getcwd() + "/haarcascade_frontalface_default.xml"
 imageRoot= os.path.join(os.getcwd(), "images")
 
 def run():    
     while True:
-        print "\n----------spycam intelligent surveillance----------------"
+        print "\n----------camera with face regcognition----------------"
 
-        #if checkConfig() == False:
-        #    print "The spycam has not been configured properly. Please update configuration."
-
-        prompt = "select an option:\n{0}\nspycam:\\>"
+        prompt = "select an option:\n{0}\ncamigo:\\>"
         option = raw_input(prompt.format(options))
         if option == "4":
             print "see you later mater"
             break;
         elif option == "3":
-            trainSystem()
-        elif option == "2":
             armSystem()
+        elif option == "2":
+            trainSystem()
         elif option == "1":
             setUpFace()
 
@@ -37,12 +34,9 @@ def armSystem():
     watcher.watch()
     pass
 
-def checkConfig():
-    print "checking configuration..."
-    return False
 
 def setUpFace():
-    name = raw_input("enter your name (letters only, no space):\nspycam:\\>")    
+    name = raw_input("enter your name (letters only, no space):\ncamigo:\\>")    
     imageLocation =  os.path.join(imageRoot, name)
     if not os.path.exists(imageLocation):
         os.makedirs(imageLocation)
