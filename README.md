@@ -19,4 +19,4 @@ Once everyone's pictures are taken, select option 2 to train the system.
 
 Then select option 3 to arm the system which will start the camera and display a green rectangle around people's faces with their name. If the system cannot recognise the person, it will display "intruder" as the name.
 
-One of the use cases I'm interested in is to use it as a surveillance camera and adapt it to send sms, emails, notification (with attached images) based on certain events such as intruder detection (unrecognised faces), motion detection (with sensors) using a raspberry pi.
+One of the use cases of interest is to set it up as a surveillance camera and adapt it to send sms, emails, notification (with attached images) based on certain events such as intruder detection (unrecognised faces), motion detection etc. (with sensors) using a raspberry pi.
